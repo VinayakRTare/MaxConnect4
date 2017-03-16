@@ -1,0 +1,9 @@
+findBestPlay():
+This method plays a piece on the board using alpha beta pruning using depth limited search
+This method takes current game board state as input.
+For each valid column it calls MaxValue/MinValue depending upon the player.
+MaxValue()/MinValue(): takes 4 parameters gameboard, depthlevel, alpha, beta
+It uses alpha beta pruning but each time reduces depthlevel by 1.
+
+MaxValue() and MinValue() runs until depth level becomes 0.
+After that It returns value to findBestPlay() function. This value is used to determine column number the AiPlayer would like to play in.
